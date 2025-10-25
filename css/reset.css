@@ -1,0 +1,92 @@
+@charset "UTF-8";
+
+/* CSSリセット */
+
+html{
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+ 
+* ,*::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 62.5% /* 1rem = 10px に設定 */;
+}
+
+/* ===== レスポンシブ（750px以下）100pxごとに調整 ===== */
+
+@media screen and (max-width: 750px) {
+  html {
+    font-size: 56.25%; /* 1rem = 9px */
+  }
+}
+
+@media screen and (max-width: 650px) {
+  html {
+    font-size: 53.125%; /* 1rem ≒ 8.5px */
+  }
+}
+
+@media screen and (max-width: 550px) {
+  html {
+    font-size: 50%; /* 1rem = 8px */
+  }
+}
+
+@media screen and (max-width: 450px) {
+  html {
+    font-size: 46.875%; /* 1rem ≒ 7.5px */
+  }
+}
+
+@media screen and (max-width: 350px) {
+  html {
+    font-size: 43.75%; /* 1rem ≒ 7px */
+  }
+}
+
+ /* 使用color */
+ :root {
+     --main-color: #f1eceb; /* メインカラー */
+     --sub-color: #9f8a6c; /* サブカラー */
+     --accent-color: #f84004; /* アクセントカラー */
+     --text-color: #363427; /* 文字色*/
+     --white: #fff;  /* 白 */
+ }
+
+/* 使用フォントの種類 */
+:root{
+    --font-primary: "Shippori Mincho", "Hiragino Mincho ProN", "Yu Mincho", serif; /* メインフォント */
+    --font-secondary: "Zen Kaku Gothic New", "Hiragino Kaku Gothic ProN", "Yu Gothic", sans-serif; /* サブフォント */
+    --font-accent: "EB Garamond", "Times New Roman", serif; /* アクセントフォント */
+}
+
+body{
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html,body,h1,h2,h3,p,dl,dt,dd,ul,li 
+{
+margin: 0;
+padding: 0;
+line-height: 1;
+color: var(--text-color);
+font-family: var(--font-secondary);
+}
+
+a{
+text-decoration: none;
+color: inherit;
+}
+
+ul,ol,li{
+list-style: none;
+}
+
+img{
+max-width: 100%;
+vertical-align: bottom;
+border: none
+}
