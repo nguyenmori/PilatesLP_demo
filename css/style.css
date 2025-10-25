@@ -1953,7 +1953,7 @@ background-position: 50% 100%;
 
         .voice-item:nth-child(even) .voice-label span {
         top: 16%;
-        left: 39%;
+        left: 37%;
         padding: 1rem 2.4rem 1rem 1rem;
     
     }
@@ -2098,4 +2098,5 @@ background-position: 50% 100%;
     .sp{
     display: block;
     }
+
 }
